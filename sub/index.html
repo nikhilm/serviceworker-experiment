@@ -1,0 +1,9 @@
+Embedded content.
+
+<script>
+    navigator.serviceWorker.register('/sub/service.js', { scope: '/sub*' }).then(function(sw) {
+        console.log(sw);
+    }, function(e) {
+        console.log(e);
+    });
+</script>

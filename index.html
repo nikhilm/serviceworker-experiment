@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+          if (!navigator.serviceWorker.active) {
+              navigator.serviceWorker.register('/service.js').then(function(sw) {
+                console.log(sw);
+              }, function(e) {
+                console.log(e);
+              });
+          } else {
+            console.log("Already have active serviceWorker " + navigator.serviceWorker.active);
+          }
+        </script>
+        <iframe src="/sub/index.html"> </iframe>
+        <script src="/fakescript.js"> </script>
+    </body>
+</html>
