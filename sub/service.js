@@ -9,7 +9,7 @@ onfetch = function(e) {
 
   var url = new URL(request.url);
   dump("PATH " + url.pathname + "\n");
-  if (url.pathname == "/sub/index.html") {
+  if (url.pathname == "/serviceworker-experiment/sub/index.html") {
     e.respondWith(new SameOriginResponse({body: "Fake embedded content"}));
     return;
   }

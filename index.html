@@ -2,7 +2,7 @@
     <body>
         <script>
           if (!navigator.serviceWorker.active) {
-              navigator.serviceWorker.register('/service.js').then(function(sw) {
+              navigator.serviceWorker.register('service.js').then(function(sw) {
                 console.log(sw);
                 console.log(navigator.serviceWorker.installing);
                 setTimeout(function(e) {
@@ -15,7 +15,7 @@
             console.log("Already have active serviceWorker " + navigator.serviceWorker.active);
           }
         </script>
-        <iframe src="/sub/index.html"> </iframe>
-        <script src="/fakescript.js"> </script>
+        <iframe src="sub/index.html"> </iframe>
+        <script src="fakescript.js"> </script>
     </body>
 </html>
