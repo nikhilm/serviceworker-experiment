@@ -1,3 +1,7 @@
+oninstall = function(e) {
+  dump("\n\n\nNSM Got INSTALL event\n\n\n");
+}
+
 onfetch = function(e) {
   dump("service.js Received fetch event!\n");
   var request = e.request;
