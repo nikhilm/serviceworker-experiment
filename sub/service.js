@@ -8,7 +8,7 @@ onfetch = function(e) {
   var url = new URL(request.url);
   dump("PATH " + url.pathname + "\n");
   if (url.pathname == "/serviceworker-experiment/sub/index.html") {
-    e.respondWith(new Response({body: "Fake embedded content"}));
+    e.respondWith(new Response("Fake embedded content"));
     return;
   }
 }
