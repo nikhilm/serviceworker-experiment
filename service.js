@@ -7,7 +7,7 @@ onfetch = function(e) {
 
   var url = new URL(request.url);
   dump("PATH " + url.pathname + "\n");
-  if (url.pathname == "/fakescript.js") {
+  if (url.pathname == "/serviceworker-experiment/fakescript.js") {
     e.respondWith(new Response({body: "alert('annoying popup');"}));
     return;
   }
